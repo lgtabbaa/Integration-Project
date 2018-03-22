@@ -1,13 +1,13 @@
 
-public class GetInfo {
+public class Person {
 		private String name;
 		private int age;
 		
-	public GetInfo() {
+	public Person() {
 		name = "Laila";
 		age = 21;
 	}
-	public GetInfo(String newName, int newAge) {
+	public Person(String newName, int newAge) {
 		name = newName;
 		age= newAge;
 	}
@@ -28,8 +28,8 @@ public class GetInfo {
 		this.age = age;
 	}
 	public static void main(String[] args) {
-		GetInfo get1 = new GetInfo(); //calling default constructor
-		GetInfo get2 = new GetInfo("Lulu", 22); //calling overloaded constructor
+		Person get1 = new GetInfo(); //calling default constructor
+		Person get2 = new GetInfo("Lulu", 22); //calling overloaded constructor
 		System.out.println("The first name was: " + get1.getName());
 		System.out.println("The first age was: " + get1.getAge());
 		System.out.println("The second name was: " + get2.getName());
